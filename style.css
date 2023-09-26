@@ -1,0 +1,41 @@
+.our_table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text1{
+    color: #515be6;
+    font-size: 70px;
+}
+
+.input1{
+    font-size: 30px;
+    display:block;
+    width:100%;
+    margin:10px 0;
+    padding:10px;
+    border-radius:10px;
+    border: 1px solid #eee;
+    transition: .3s border-color;
+
+}
+
+.input1:hover  {
+    border: 1px solid #aaa;
+  }
+
+.input_forms{
+    font-size: 40px;
+}
+
+  .button1 {
+    cursor: pointer;
+    padding:10px;
+    border:none;
+    background-color:#3F51B5;
+    color:#fff;
+    border-radius:20px;
+    width:100%;
+    margin: 20px;
+    }
