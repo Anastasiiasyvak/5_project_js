@@ -6,8 +6,6 @@
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="style.css"/>
-
-
 </head>
 <body>
     <div class="our_table">
@@ -30,26 +28,28 @@
         <input class="input2" type="text" id="title" placeholder="Title">
         <input class="input2" type="text" id="authors" placeholder="Authors">
         <input class="input2" type="number" id="numberOfPages" placeholder="number of pages">
-        <button class="button2">Add book</button>
+        <button class="button2" onclick="addNewBook()">Add book</button>
     </div>
     <div class="book_shelf">
         <p>my book shelf:</p>
-        <p>total amount of books: </p>
+        <p id="totalBooksCount">Total amount of books: 0</p>
         <div>
-            <button class="button2">alert number of unread books</button>
-            <button class="button2">alert number of fav books</button>
+            <button class="button2" onclick="alertUnreadBooks()">alert number of unread books</button>
+            <button class="button2" onclick="alertFavoriteBooks()">alert number of fav books</button>
         </div>
-        <div class="added-book">
-            <p>title: </p>
-            <p>pages: </p>
-            <p>authors: </p>
-            <p>favorite: </p>
-            <p>is read: </p>
+        <div id="bookList" class="book-list">
         </div>
-        <div>
-            <button class="button3">toogle favorite</button>
-            <button class="button3">toogle isRead</button>
-            <button class="button2">remove book from shelf</button>
+        <div class="added-book" id="addedBook">
+            <p>title: <span id="bookTitle"></span></p>
+            <p>pages: <span id="bookPages"></span></p>
+            <p>authors: <span id="bookAuthors"></span></p>
+            <p>favorite: <span id="bookFavorite"></span></p>
+            <p>is read: <span id="bookRead"></span></p>
+        </div>
+        <div id="buttonss">
+            <button class="button3" onclick="getFavBooks()">toogle favorite</button>
+            <button class="button3" onclick="getUnreadBooks()">toogle isRead</button>
+            <button class="button4" onclick="removeBook()">remove book from shelf</button>
         </div>
 
     </div>
