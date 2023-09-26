@@ -12,7 +12,7 @@
 .input1{
     font-size: 30px;
     display:block;
-    width:100%;
+    width:90%;
     margin:10px 0;
     padding:10px;
     border-radius:10px;
@@ -39,3 +39,74 @@
     width:100%;
     margin: 20px;
     }
+
+.input2{
+    color: var(--website-input-grey, #BCBCBC);
+    font-size: 30px;
+    display:block;
+    width:30%;
+    margin:10px 0;
+    padding:10px;
+    border-radius:10px;
+    border: 1px solid #eee;
+    transition: .3s border-color;
+    font-family: Acme;
+}
+.input_forms2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 50px;
+}
+
+.text2{
+    color: var(--website-headline-oxford-blue, #000029);
+    font-family: Alef;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.button2{
+    cursor: pointer;
+    padding:10px;
+    border:none;
+    background-color:rgba(1, 104, 252, 1);
+    color:rgba(255, 255, 255, 1);
+    border-radius:1000px;
+    width:15%;
+    margin: 20px;
+    text-align: center;
+    font-family: Acme;
+    font-size: 18px;
+}
+
+.book_shelf{
+    display: flex;
+    flex-direction: column;
+    text-align: flex-start;
+    color: rgba(0, 0, 41, 1);
+    font-family: Alef;
+    font-size: 22px;
+}
+
+.added-book{
+    color: var(--website-headline-oxford-blue, #000029);
+    font-family: Alef;
+    font-size: 22px;
+}
+
+.button3{
+    cursor: pointer;
+    padding:10px;
+    border:none;
+    background-color:rgba(203, 215, 232, 1);
+    border-radius:1000px;
+    width:15%;
+    margin: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-family: Acme;
+    color: rgba(0, 0, 41, 1);
+
+}

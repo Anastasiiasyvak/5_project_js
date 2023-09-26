@@ -51,3 +51,35 @@ function createTableCells(){
 function removeTable() {
     $("table").remove();
 }
+
+class Book {
+    constructor(title, authors, numberOfPages, isRead, isFavorite) {
+        this.title = title;
+        this.authors = authors;
+        this.numberOfPages = numberOfPages;
+        this.isRead = isRead;
+        this.isFavorite = isFavorite;
+    }
+
+    markAsRead() {
+        this.isRead = true;
+    }
+
+    toggleFavorite() {
+        this.isFavorite = !this.isFavorite;
+    }
+}
+
+let bookInstance = new Book('LalaLend', 'Brown, Tim del Ray', 200, false, false);
+
+console.log('Title:', bookInstance.title);
+console.log('Authors:', bookInstance.authors);
+console.log('Number of Pages:', bookInstance.numberOfPages);
+console.log('Is Read:', bookInstance.isRead);
+console.log('Is Favorite:', bookInstance.isFavorite);
+
+bookInstance.markAsRead();
+console.log('Is Read:', bookInstance.isRead); 
+
+bookInstance.toggleFavorite();
+console.log('Is Favorite:', bookInstance.isFavorite); 
